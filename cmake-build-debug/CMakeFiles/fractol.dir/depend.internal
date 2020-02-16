@@ -3,36 +3,36 @@
 
 CMakeFiles/fractol.dir/src/calculation.c.o
  /Users/bootcamp/Desktop/C/fractol/inc/fractol.h
- /Users/bootcamp/Desktop/C/fractol/libft/libft.h
+ /Users/bootcamp/Desktop/C/fractol/libft/inc/libft.h
  /Users/bootcamp/Desktop/C/fractol/minilibx_macos/mlx.h
  /Users/bootcamp/Desktop/C/fractol/src/calculation.c
 CMakeFiles/fractol.dir/src/draw.c.o
  /Users/bootcamp/Desktop/C/fractol/inc/fractol.h
- /Users/bootcamp/Desktop/C/fractol/libft/libft.h
+ /Users/bootcamp/Desktop/C/fractol/libft/inc/libft.h
  /Users/bootcamp/Desktop/C/fractol/minilibx_macos/mlx.h
  /Users/bootcamp/Desktop/C/fractol/src/draw.c
 CMakeFiles/fractol.dir/src/formulas.c.o
  /Users/bootcamp/Desktop/C/fractol/inc/fractol.h
- /Users/bootcamp/Desktop/C/fractol/libft/libft.h
+ /Users/bootcamp/Desktop/C/fractol/libft/inc/libft.h
  /Users/bootcamp/Desktop/C/fractol/minilibx_macos/mlx.h
  /Users/bootcamp/Desktop/C/fractol/src/formulas.c
 CMakeFiles/fractol.dir/src/initialize.c.o
  /Users/bootcamp/Desktop/C/fractol/inc/fractol.h
- /Users/bootcamp/Desktop/C/fractol/libft/libft.h
+ /Users/bootcamp/Desktop/C/fractol/libft/inc/libft.h
  /Users/bootcamp/Desktop/C/fractol/minilibx_macos/mlx.h
  /Users/bootcamp/Desktop/C/fractol/src/initialize.c
 CMakeFiles/fractol.dir/src/loop.c.o
  /Users/bootcamp/Desktop/C/fractol/inc/fractol.h
- /Users/bootcamp/Desktop/C/fractol/libft/libft.h
+ /Users/bootcamp/Desktop/C/fractol/libft/inc/libft.h
  /Users/bootcamp/Desktop/C/fractol/minilibx_macos/mlx.h
  /Users/bootcamp/Desktop/C/fractol/src/loop.c
 CMakeFiles/fractol.dir/src/main.c.o
  /Users/bootcamp/Desktop/C/fractol/inc/fractol.h
- /Users/bootcamp/Desktop/C/fractol/libft/libft.h
+ /Users/bootcamp/Desktop/C/fractol/libft/inc/libft.h
  /Users/bootcamp/Desktop/C/fractol/minilibx_macos/mlx.h
  /Users/bootcamp/Desktop/C/fractol/src/main.c
 CMakeFiles/fractol.dir/src/zoom.c.o
  /Users/bootcamp/Desktop/C/fractol/inc/fractol.h
- /Users/bootcamp/Desktop/C/fractol/libft/libft.h
+ /Users/bootcamp/Desktop/C/fractol/libft/inc/libft.h
  /Users/bootcamp/Desktop/C/fractol/minilibx_macos/mlx.h
  /Users/bootcamp/Desktop/C/fractol/src/zoom.c

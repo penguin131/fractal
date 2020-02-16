@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/fractol.dir/src/calculation.c.o"
-  "CMakeFiles/fractol.dir/src/cl_init.c.o"
   "CMakeFiles/fractol.dir/src/draw.c.o"
   "CMakeFiles/fractol.dir/src/formulas.c.o"
   "CMakeFiles/fractol.dir/src/initialize.c.o"

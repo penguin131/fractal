@@ -5,7 +5,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/bootcamp/Desktop/C/fractol/src/calculation.c" "/Users/bootcamp/Desktop/C/fractol/cmake-build-debug/CMakeFiles/fractol.dir/src/calculation.c.o"
-  "/Users/bootcamp/Desktop/C/fractol/src/cl_init.c" "/Users/bootcamp/Desktop/C/fractol/cmake-build-debug/CMakeFiles/fractol.dir/src/cl_init.c.o"
   "/Users/bootcamp/Desktop/C/fractol/src/draw.c" "/Users/bootcamp/Desktop/C/fractol/cmake-build-debug/CMakeFiles/fractol.dir/src/draw.c.o"
   "/Users/bootcamp/Desktop/C/fractol/src/formulas.c" "/Users/bootcamp/Desktop/C/fractol/cmake-build-debug/CMakeFiles/fractol.dir/src/formulas.c.o"
   "/Users/bootcamp/Desktop/C/fractol/src/initialize.c" "/Users/bootcamp/Desktop/C/fractol/cmake-build-debug/CMakeFiles/fractol.dir/src/initialize.c.o"

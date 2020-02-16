@@ -64,3 +64,28 @@ int		burning_ship(t_data *data, t_complex_num *c)
 	}
 	return (iteration);
 }
+
+int		buffalo(t_data *data, t_complex_num *c)
+{
+	int				iteration;
+	t_complex_num	z;
+	double			z_tmp;
+	double			diff_tmp;
+
+	iteration = 0;
+	z = init(c->real, c->img);
+	while (z.real * z.real + z.img * z.img <= 4
+		   && iteration < data->max_iterations)
+	{
+		diff_tmp = z.real * z.real - z.img * z.img;
+		z_tmp = z.img;
+		if (z_tmp < 0)
+			z_tmp *= -1;
+		if (diff_tmp < 0)
+			diff_tmp *= -1;
+		z = init(diff_tmp + c->real,
+				-2.0 * z.real * z_tmp + c->img);
+		iteration++;
+	}
+	return (iteration);
+}

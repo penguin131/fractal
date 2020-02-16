@@ -2,7 +2,7 @@
 #ifndef FRACTOL_H
 #define FRACTOL_H
 
-# include "../libft/libft.h"
+# include "../libft/inc/libft.h"
 # include "../minilibx_macos/mlx.h"
 # include <stdio.h>
 # include <fcntl.h>
@@ -15,7 +15,7 @@
 # define ITER_STEP 10
 # define ZOOM_UP_STEP 0.8
 # define ZOOM_DOWN_STEP 1.2
-# define START_ITER 50
+# define START_ITER 150
 
 # define ESC 53
 # define ITER_UP 18
@@ -27,14 +27,15 @@
 # define LEFT 123
 # define SPACE 49
 
-# define THREAD_CNT 15
+# define THREAD_CNT 50
 # include <pthread.h>
 
-# define FRACTAL_CNT 3
+# define FRACTAL_CNT 4
 
 # define MANDELBROT 0
 # define JULIA 1
 # define BURNING 2
+# define BUFFALO 3
 
 typedef struct		s_complex_num
 {
@@ -46,8 +47,8 @@ typedef struct		s_data
 {
 	char 			reverse_zoom;
 	char 			solo_tread;
-	char 			mode;
 	char			hold_julia;
+	int 			mode;
 	void			*mlx_ptr;
 	void			*win_ptr;
 	void			*img_ptr;
@@ -79,20 +80,13 @@ int					julia(t_data *data, t_complex_num *c);
 int					julia_flow(int x, int y, t_data *data);
 int					mandelbrot(t_data *data, t_complex_num *c);
 int					burning_ship(t_data *data, t_complex_num *c);
+int					buffalo(t_data *data, t_complex_num *c);
 
 static char			*g_fractals[] = {
 		"Mandelbrot",
 		"Julia",
-		"Burning ship"
+		"Burning ship",
+		"Buffalo"
 };
-
-/**
- * OpenCL!
- */
-#ifdef __APPLE__
-#include <OpenCL/opencl.h>
-#else
-#include <CL/cl.h>
-#endif
 
 #endif

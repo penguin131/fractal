@@ -13,6 +13,7 @@ void	usage()
 			write(1, ", ", 2);
 		i++;
 	}
+	write(1, "\n", 1);
 	exit(0);
 }
 
@@ -45,6 +46,7 @@ int		main(int c, char **v)
 	data.fractals[MANDELBROT] = mandelbrot;
 	data.fractals[JULIA] = julia;
 	data.fractals[BURNING] = burning_ship;
+	data.fractals[BUFFALO] = buffalo;
 	initialize_constant(&data);
 	initialize_mlx(&data, "zdarova!");
 	data.max_iterations = START_ITER;

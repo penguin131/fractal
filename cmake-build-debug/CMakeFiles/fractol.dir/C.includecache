@@ -7,8 +7,8 @@
 #IncludeRegexTransform: 
 
 /Users/bootcamp/Desktop/C/fractol/inc/fractol.h
-../libft/libft.h
-/Users/bootcamp/Desktop/C/fractol/libft/libft.h
+../libft/inc/libft.h
+/Users/bootcamp/Desktop/C/fractol/libft/inc/libft.h
 ../minilibx_macos/mlx.h
 /Users/bootcamp/Desktop/C/fractol/minilibx_macos/mlx.h
 stdio.h
@@ -20,7 +20,7 @@ math.h
 pthread.h
 -
 
-/Users/bootcamp/Desktop/C/fractol/libft/libft.h
+/Users/bootcamp/Desktop/C/fractol/libft/inc/libft.h
 string.h
 -
 stdlib.h

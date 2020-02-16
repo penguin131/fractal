@@ -88,9 +88,6 @@
 		<Unit filename="/Users/bootcamp/Desktop/C/fractol/src/calculation.c">
 			<Option target="fractol"/>
 		</Unit>
-		<Unit filename="/Users/bootcamp/Desktop/C/fractol/src/cl_init.c">
-			<Option target="fractol"/>
-		</Unit>
 		<Unit filename="/Users/bootcamp/Desktop/C/fractol/src/draw.c">
 			<Option target="fractol"/>
 		</Unit>

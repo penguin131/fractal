@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n00014jr00094f/T/AppTranslocation/387EDDC9-DCAC-4E72-8A7E-706F1311BFB6/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n00014jr00094f/T/AppTranslocation/387EDDC9-DCAC-4E72-8A7E-706F1311BFB6/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/smight/Desktop/fractal
+CMAKE_SOURCE_DIR = /Users/bootcamp/Desktop/C/fractol
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/smight/Desktop/fractal/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/bootcamp/Desktop/C/fractol/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/smight/Desktop/fractal/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/private/var/folders/zz/zyxvpxvq6csfxvn_n00014jr00094f/T/AppTranslocation/387EDDC9-DCAC-4E72-8A7E-706F1311BFB6/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/private/var/folders/zz/zyxvpxvq6csfxvn_n00014jr00094f/T/AppTranslocation/387EDDC9-DCAC-4E72-8A7E-706F1311BFB6/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/smight/Desktop/fractal/cmake-build-debug/CMakeFiles /Users/smight/Desktop/fractal/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bootcamp/Desktop/C/fractol/cmake-build-debug/CMakeFiles /Users/bootcamp/Desktop/C/fractol/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/smight/Desktop/fractal/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bootcamp/Desktop/C/fractol/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named fractal
+# Target rules for targets named fractol
 
 # Build rule for target.
-fractal: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 fractal
-.PHONY : fractal
+fractol: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 fractol
+.PHONY : fractol
 
 # fast build rule for target.
-fractal/fast:
-	$(MAKE) -f CMakeFiles/fractal.dir/build.make CMakeFiles/fractal.dir/build
-.PHONY : fractal/fast
+fractol/fast:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/build
+.PHONY : fractol/fast
 
 src/calculation.o: src/calculation.c.o
 
@@ -129,7 +129,7 @@ src/calculation.o: src/calculation.c.o
 
 # target to build an object file
 src/calculation.c.o:
-	$(MAKE) -f CMakeFiles/fractal.dir/build.make CMakeFiles/fractal.dir/src/calculation.c.o
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/calculation.c.o
 .PHONY : src/calculation.c.o
 
 src/calculation.i: src/calculation.c.i
@@ -138,7 +138,7 @@ src/calculation.i: src/calculation.c.i
 
 # target to preprocess a source file
 src/calculation.c.i:
-	$(MAKE) -f CMakeFiles/fractal.dir/build.make CMakeFiles/fractal.dir/src/calculation.c.i
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/calculation.c.i
 .PHONY : src/calculation.c.i
 
 src/calculation.s: src/calculation.c.s
@@ -147,35 +147,8 @@ src/calculation.s: src/calculation.c.s
 
 # target to generate assembly for a file
 src/calculation.c.s:
-	$(MAKE) -f CMakeFiles/fractal.dir/build.make CMakeFiles/fractal.dir/src/calculation.c.s
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/calculation.c.s
 .PHONY : src/calculation.c.s
-
-src/cl_init.o: src/cl_init.c.o
-
-.PHONY : src/cl_init.o
-
-# target to build an object file
-src/cl_init.c.o:
-	$(MAKE) -f CMakeFiles/fractal.dir/build.make CMakeFiles/fractal.dir/src/cl_init.c.o
-.PHONY : src/cl_init.c.o
-
-src/cl_init.i: src/cl_init.c.i
-
-.PHONY : src/cl_init.i
-
-# target to preprocess a source file
-src/cl_init.c.i:
-	$(MAKE) -f CMakeFiles/fractal.dir/build.make CMakeFiles/fractal.dir/src/cl_init.c.i
-.PHONY : src/cl_init.c.i
-
-src/cl_init.s: src/cl_init.c.s
-
-.PHONY : src/cl_init.s
-
-# target to generate assembly for a file
-src/cl_init.c.s:
-	$(MAKE) -f CMakeFiles/fractal.dir/build.make CMakeFiles/fractal.dir/src/cl_init.c.s
-.PHONY : src/cl_init.c.s
 
 src/draw.o: src/draw.c.o
 
@@ -183,7 +156,7 @@ src/draw.o: src/draw.c.o
 
 # target to build an object file
 src/draw.c.o:
-	$(MAKE) -f CMakeFiles/fractal.dir/build.make CMakeFiles/fractal.dir/src/draw.c.o
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/draw.c.o
 .PHONY : src/draw.c.o
 
 src/draw.i: src/draw.c.i
@@ -192,7 +165,7 @@ src/draw.i: src/draw.c.i
 
 # target to preprocess a source file
 src/draw.c.i:
-	$(MAKE) -f CMakeFiles/fractal.dir/build.make CMakeFiles/fractal.dir/src/draw.c.i
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/draw.c.i
 .PHONY : src/draw.c.i
 
 src/draw.s: src/draw.c.s
@@ -201,7 +174,7 @@ src/draw.s: src/draw.c.s
 
 # target to generate assembly for a file
 src/draw.c.s:
-	$(MAKE) -f CMakeFiles/fractal.dir/build.make CMakeFiles/fractal.dir/src/draw.c.s
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/draw.c.s
 .PHONY : src/draw.c.s
 
 src/formulas.o: src/formulas.c.o
@@ -210,7 +183,7 @@ src/formulas.o: src/formulas.c.o
 
 # target to build an object file
 src/formulas.c.o:
-	$(MAKE) -f CMakeFiles/fractal.dir/build.make CMakeFiles/fractal.dir/src/formulas.c.o
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/formulas.c.o
 .PHONY : src/formulas.c.o
 
 src/formulas.i: src/formulas.c.i
@@ -219,7 +192,7 @@ src/formulas.i: src/formulas.c.i
 
 # target to preprocess a source file
 src/formulas.c.i:
-	$(MAKE) -f CMakeFiles/fractal.dir/build.make CMakeFiles/fractal.dir/src/formulas.c.i
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/formulas.c.i
 .PHONY : src/formulas.c.i
 
 src/formulas.s: src/formulas.c.s
@@ -228,7 +201,7 @@ src/formulas.s: src/formulas.c.s
 
 # target to generate assembly for a file
 src/formulas.c.s:
-	$(MAKE) -f CMakeFiles/fractal.dir/build.make CMakeFiles/fractal.dir/src/formulas.c.s
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/formulas.c.s
 .PHONY : src/formulas.c.s
 
 src/initialize.o: src/initialize.c.o
@@ -237,7 +210,7 @@ src/initialize.o: src/initialize.c.o
 
 # target to build an object file
 src/initialize.c.o:
-	$(MAKE) -f CMakeFiles/fractal.dir/build.make CMakeFiles/fractal.dir/src/initialize.c.o
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/initialize.c.o
 .PHONY : src/initialize.c.o
 
 src/initialize.i: src/initialize.c.i
@@ -246,7 +219,7 @@ src/initialize.i: src/initialize.c.i
 
 # target to preprocess a source file
 src/initialize.c.i:
-	$(MAKE) -f CMakeFiles/fractal.dir/build.make CMakeFiles/fractal.dir/src/initialize.c.i
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/initialize.c.i
 .PHONY : src/initialize.c.i
 
 src/initialize.s: src/initialize.c.s
@@ -255,7 +228,7 @@ src/initialize.s: src/initialize.c.s
 
 # target to generate assembly for a file
 src/initialize.c.s:
-	$(MAKE) -f CMakeFiles/fractal.dir/build.make CMakeFiles/fractal.dir/src/initialize.c.s
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/initialize.c.s
 .PHONY : src/initialize.c.s
 
 src/loop.o: src/loop.c.o
@@ -264,7 +237,7 @@ src/loop.o: src/loop.c.o
 
 # target to build an object file
 src/loop.c.o:
-	$(MAKE) -f CMakeFiles/fractal.dir/build.make CMakeFiles/fractal.dir/src/loop.c.o
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/loop.c.o
 .PHONY : src/loop.c.o
 
 src/loop.i: src/loop.c.i
@@ -273,7 +246,7 @@ src/loop.i: src/loop.c.i
 
 # target to preprocess a source file
 src/loop.c.i:
-	$(MAKE) -f CMakeFiles/fractal.dir/build.make CMakeFiles/fractal.dir/src/loop.c.i
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/loop.c.i
 .PHONY : src/loop.c.i
 
 src/loop.s: src/loop.c.s
@@ -282,7 +255,7 @@ src/loop.s: src/loop.c.s
 
 # target to generate assembly for a file
 src/loop.c.s:
-	$(MAKE) -f CMakeFiles/fractal.dir/build.make CMakeFiles/fractal.dir/src/loop.c.s
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/loop.c.s
 .PHONY : src/loop.c.s
 
 src/main.o: src/main.c.o
@@ -291,7 +264,7 @@ src/main.o: src/main.c.o
 
 # target to build an object file
 src/main.c.o:
-	$(MAKE) -f CMakeFiles/fractal.dir/build.make CMakeFiles/fractal.dir/src/main.c.o
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/main.c.o
 .PHONY : src/main.c.o
 
 src/main.i: src/main.c.i
@@ -300,7 +273,7 @@ src/main.i: src/main.c.i
 
 # target to preprocess a source file
 src/main.c.i:
-	$(MAKE) -f CMakeFiles/fractal.dir/build.make CMakeFiles/fractal.dir/src/main.c.i
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/main.c.i
 .PHONY : src/main.c.i
 
 src/main.s: src/main.c.s
@@ -309,7 +282,7 @@ src/main.s: src/main.c.s
 
 # target to generate assembly for a file
 src/main.c.s:
-	$(MAKE) -f CMakeFiles/fractal.dir/build.make CMakeFiles/fractal.dir/src/main.c.s
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/main.c.s
 .PHONY : src/main.c.s
 
 src/zoom.o: src/zoom.c.o
@@ -318,7 +291,7 @@ src/zoom.o: src/zoom.c.o
 
 # target to build an object file
 src/zoom.c.o:
-	$(MAKE) -f CMakeFiles/fractal.dir/build.make CMakeFiles/fractal.dir/src/zoom.c.o
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/zoom.c.o
 .PHONY : src/zoom.c.o
 
 src/zoom.i: src/zoom.c.i
@@ -327,7 +300,7 @@ src/zoom.i: src/zoom.c.i
 
 # target to preprocess a source file
 src/zoom.c.i:
-	$(MAKE) -f CMakeFiles/fractal.dir/build.make CMakeFiles/fractal.dir/src/zoom.c.i
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/zoom.c.i
 .PHONY : src/zoom.c.i
 
 src/zoom.s: src/zoom.c.s
@@ -336,7 +309,7 @@ src/zoom.s: src/zoom.c.s
 
 # target to generate assembly for a file
 src/zoom.c.s:
-	$(MAKE) -f CMakeFiles/fractal.dir/build.make CMakeFiles/fractal.dir/src/zoom.c.s
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/zoom.c.s
 .PHONY : src/zoom.c.s
 
 # Help Target
@@ -347,13 +320,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... fractal"
+	@echo "... fractol"
 	@echo "... src/calculation.o"
 	@echo "... src/calculation.i"
 	@echo "... src/calculation.s"
-	@echo "... src/cl_init.o"
-	@echo "... src/cl_init.i"
-	@echo "... src/cl_init.s"
 	@echo "... src/draw.o"
 	@echo "... src/draw.i"
 	@echo "... src/draw.s"
