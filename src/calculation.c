@@ -2,17 +2,11 @@
 
 int		get_color(int iteration, int max)
 {
-//	double t = (double)iteration / (double)max;//доля от максимума
-//	int red = (int)(15 * pow((1 - t), 2) * pow(t, 2) * 255);
-//	int green = (int)(17 * (1 - t) * pow(t, 3) * 255);
-//	int blue = (int)(3.5 * pow((1 - t), 3) * t * 255);
-//	return (red << 16 | green << 8 | blue);
 	double t = (double)iteration / (double)max;//доля от максимума
-	int red = (int)(9 * pow((1 - t), 2) * pow(t, 2) * 255);
-	int green = (int)(15 * (1 - t) * pow(t, 3) * 255);
-	int blue = (int)(8.5 * pow((1 - t), 3) * t * 255);
+	int red = (int)(15 * pow((1 - t), 2) * pow(t, 2) * 255);
+	int green = (int)(17 * (1 - t) * pow(t, 3) * 255);
+	int blue = (int)(3.5 * pow((1 - t), 3) * t * 255);
 	return (red << 16 | green << 8 | blue);
-//	return (iteration == max ? 0 : 0xffffff);
 }
 
 void	error()
@@ -37,7 +31,7 @@ void			fill_map_slow(t_data *data)
 		while (x < WIDTH)
 		{
 			c.real = data->min.real + x * data->coeff.real;
-			data->mlx_map[y * HEIGHT + x] = data->fractals[data->mode](data, &c);
+			data->mlx_map[y * HEIGHT + x] = get_color(data->fractals[data->mode](data, &c), data->max_iterations);
 			x++;
 		}
 		y++;
@@ -58,7 +52,6 @@ static void		draw_thread(t_data *data)
 		while (x < WIDTH)
 		{
 			c.real = data->min.real + x * data->coeff.real;
-			//get_color(i, data->max_iterations)
 			data->mlx_map[y * HEIGHT + x] = get_color(data->fractals[data->mode](data, &c), data->max_iterations);
 			x++;
 		}

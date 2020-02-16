@@ -1,6 +1,5 @@
 #include "../inc/fractol.h"
 
-
 int 	mandelbrot(t_data *data, t_complex_num *c)
 {
 	int				i;
@@ -44,4 +43,20 @@ int				julia_flow(int x, int y, t_data *data)
 		draw_fractal(data);
 	}
 	return (0);
+}
+
+int				burning_ship(t_data *data, t_complex_num *c)
+{
+	int				iteration;
+	t_complex_num	z;
+
+	iteration = 0;
+	z = init(c->real, c->img);
+	while (pow(z.real, 2.0) + pow(z.img, 2.0) <= 4 && iteration < data->max_iterations)
+	{
+		z = init(pow(z.real, 2.0) - pow(z.img, 2.0) + c->real,
+				-2.0 * fabs(z.real * z.img) + c->img);
+		iteration++;
+	}
+	return (iteration);
 }

@@ -7,7 +7,7 @@ void	switch_fractal(t_data *data, int key)
 	else
 		data->mode--;
 	data->max_iterations = START_ITER;
-	initialize_complex(data);
+	initialize_constant(data);
 }
 
 int		deal_key(int key, void *param)

@@ -150,6 +150,33 @@ src/calculation.c.s:
 	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/calculation.c.s
 .PHONY : src/calculation.c.s
 
+src/cl_init.o: src/cl_init.c.o
+
+.PHONY : src/cl_init.o
+
+# target to build an object file
+src/cl_init.c.o:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/cl_init.c.o
+.PHONY : src/cl_init.c.o
+
+src/cl_init.i: src/cl_init.c.i
+
+.PHONY : src/cl_init.i
+
+# target to preprocess a source file
+src/cl_init.c.i:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/cl_init.c.i
+.PHONY : src/cl_init.c.i
+
+src/cl_init.s: src/cl_init.c.s
+
+.PHONY : src/cl_init.s
+
+# target to generate assembly for a file
+src/cl_init.c.s:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/cl_init.c.s
+.PHONY : src/cl_init.c.s
+
 src/draw.o: src/draw.c.o
 
 .PHONY : src/draw.o
@@ -203,6 +230,33 @@ src/formulas.s: src/formulas.c.s
 src/formulas.c.s:
 	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/formulas.c.s
 .PHONY : src/formulas.c.s
+
+src/initialize.o: src/initialize.c.o
+
+.PHONY : src/initialize.o
+
+# target to build an object file
+src/initialize.c.o:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/initialize.c.o
+.PHONY : src/initialize.c.o
+
+src/initialize.i: src/initialize.c.i
+
+.PHONY : src/initialize.i
+
+# target to preprocess a source file
+src/initialize.c.i:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/initialize.c.i
+.PHONY : src/initialize.c.i
+
+src/initialize.s: src/initialize.c.s
+
+.PHONY : src/initialize.s
+
+# target to generate assembly for a file
+src/initialize.c.s:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/initialize.c.s
+.PHONY : src/initialize.c.s
 
 src/loop.o: src/loop.c.o
 
@@ -297,12 +351,18 @@ help:
 	@echo "... src/calculation.o"
 	@echo "... src/calculation.i"
 	@echo "... src/calculation.s"
+	@echo "... src/cl_init.o"
+	@echo "... src/cl_init.i"
+	@echo "... src/cl_init.s"
 	@echo "... src/draw.o"
 	@echo "... src/draw.i"
 	@echo "... src/draw.s"
 	@echo "... src/formulas.o"
 	@echo "... src/formulas.i"
 	@echo "... src/formulas.s"
+	@echo "... src/initialize.o"
+	@echo "... src/initialize.i"
+	@echo "... src/initialize.s"
 	@echo "... src/loop.o"
 	@echo "... src/loop.i"
 	@echo "... src/loop.s"

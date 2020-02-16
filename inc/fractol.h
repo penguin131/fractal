@@ -15,7 +15,7 @@
 # define ITER_STEP 10
 # define ZOOM_UP_STEP 0.8
 # define ZOOM_DOWN_STEP 1.2
-# define START_ITER 150
+# define START_ITER 50
 
 # define ESC 53
 # define ITER_UP 18
@@ -30,10 +30,11 @@
 # define THREAD_CNT 90
 # include <pthread.h>
 
-# define FRACTAL_CNT 2
+# define FRACTAL_CNT 3
 
 # define MANDELBROT 0
 # define JULIA 1
+# define BURNING 2
 
 typedef struct		s_complex_num
 {
@@ -70,16 +71,28 @@ t_complex_num		init(double real, double img);
 void				draw_fractal(t_data *data);
 void				end_mlx(t_data *data);
 int					zoom(int key, int x, int y, t_data *data);
-void				initialize_complex(t_data *data);
+void				initialize_constant(t_data *data);
 int					get_color(int iteration, int max);
+void				initialize_mlx(t_data *data, char *name);
 
 int					julia(t_data *data, t_complex_num *c);
 int					julia_flow(int x, int y, t_data *data);
 int					mandelbrot(t_data *data, t_complex_num *c);
+int					burning_ship(t_data *data, t_complex_num *c);
 
 static char			*g_fractals[] = {
 		"Mandelbrot",
-		"Julia"
+		"Julia",
+		"Burning ship"
 };
+
+/**
+ * OpenCL!
+ */
+#ifdef __APPLE__
+#include <OpenCL/opencl.h>
+#else
+#include <CL/cl.h>
+#endif
 
 #endif
