@@ -3,9 +3,10 @@
 int		get_color(int iteration, int max)
 {
 	double t = (double)iteration / (double)max;//доля от максимума
-	int red = (int)(15 * pow((1 - t), 2) * pow(t, 2) * 255);
-	int green = (int)(17 * (1 - t) * pow(t, 3) * 255);
-	int blue = (int)(3.5 * pow((1 - t), 3) * t * 255);
+	double t2 = 1 - t;
+	int red = (int)(15 * t2 * t2 * t * t * 255);
+	int green = (int)(17 * t2 * t * t * t * 255);
+	int blue = (int)(3.5 * t2 * t2 * t2 * t * 255);
 	return (red << 16 | green << 8 | blue);
 }
 

@@ -27,7 +27,7 @@
 # define LEFT 123
 # define SPACE 49
 
-# define THREAD_CNT 90
+# define THREAD_CNT 15
 # include <pthread.h>
 
 # define FRACTAL_CNT 3
