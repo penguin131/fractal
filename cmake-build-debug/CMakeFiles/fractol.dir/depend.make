@@ -16,6 +16,11 @@ CMakeFiles/fractol.dir/src/formulas.c.o: ../libft/inc/libft.h
 CMakeFiles/fractol.dir/src/formulas.c.o: ../minilibx_macos/mlx.h
 CMakeFiles/fractol.dir/src/formulas.c.o: ../src/formulas.c
 
+CMakeFiles/fractol.dir/src/formulas2.c.o: ../inc/fractol.h
+CMakeFiles/fractol.dir/src/formulas2.c.o: ../libft/inc/libft.h
+CMakeFiles/fractol.dir/src/formulas2.c.o: ../minilibx_macos/mlx.h
+CMakeFiles/fractol.dir/src/formulas2.c.o: ../src/formulas2.c
+
 CMakeFiles/fractol.dir/src/initialize.c.o: ../inc/fractol.h
 CMakeFiles/fractol.dir/src/initialize.c.o: ../libft/inc/libft.h
 CMakeFiles/fractol.dir/src/initialize.c.o: ../minilibx_macos/mlx.h

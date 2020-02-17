@@ -11,7 +11,7 @@ void	draw_menu(t_data *data)
 		mlx_string_put(data->mlx_ptr, data->win_ptr, 30, HEIGHT + 10, 0xf54242, "Many threads. Press 4 to swap mode.");
 	else
 		mlx_string_put(data->mlx_ptr, data->win_ptr, 30, HEIGHT + 10, 0xf54242, "Solo thread. Press 4 to swap mode.");
-	mlx_string_put(data->mlx_ptr, data->win_ptr, 30, HEIGHT + 30, 0xf54242, g_fractals[data->mode]);
+	mlx_string_put(data->mlx_ptr, data->win_ptr, 30, HEIGHT + 30, 0xf54242, data->names[data->mode]);
 	mlx_string_put(data->mlx_ptr, data->win_ptr, 30, HEIGHT + 50, 0xf54242, "Use left/right arrows to switch");
 }
 

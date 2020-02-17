@@ -63,6 +63,7 @@ typedef struct		s_data
 	t_complex_num	min;
 	t_complex_num	coeff;
 	t_complex_num	julia_c;
+	char			*names[FRACTAL_CNT];
 	int				(*fractals[FRACTAL_CNT])(struct s_data *data, t_complex_num *c);
 }					t_data;
 
@@ -83,13 +84,5 @@ int					mandelbrot(t_data *data, t_complex_num *c);
 int					burning_ship(t_data *data, t_complex_num *c);
 int					buffalo(t_data *data, t_complex_num *c);
 int					mandelbar(t_data *data, t_complex_num *c);
-
-static char			*g_fractals[] = {
-		"Mandelbrot",
-		"Julia",
-		"Burning ship",
-		"Buffalo",
-		"Mandelbar"
-};
 
 #endif
