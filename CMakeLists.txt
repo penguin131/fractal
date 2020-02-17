@@ -14,7 +14,7 @@ add_executable(fractol
         inc/fractol.h
         src/main.c
         src/loop.c
-        src/calculation.c src/formulas.c src/draw.c src/zoom.c src/initialize.c)
+        src/calculation.c src/formulas.c src/draw.c src/zoom.c src/initialize.c src/formulas2.c)
 
 target_link_libraries(fractol /Users/bootcamp/Desktop/C/fractol/libft/libft.a)
 target_link_libraries(fractol "libmlx.a")

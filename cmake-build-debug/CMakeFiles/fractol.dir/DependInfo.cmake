@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/bootcamp/Desktop/C/fractol/src/calculation.c" "/Users/bootcamp/Desktop/C/fractol/cmake-build-debug/CMakeFiles/fractol.dir/src/calculation.c.o"
   "/Users/bootcamp/Desktop/C/fractol/src/draw.c" "/Users/bootcamp/Desktop/C/fractol/cmake-build-debug/CMakeFiles/fractol.dir/src/draw.c.o"
   "/Users/bootcamp/Desktop/C/fractol/src/formulas.c" "/Users/bootcamp/Desktop/C/fractol/cmake-build-debug/CMakeFiles/fractol.dir/src/formulas.c.o"
+  "/Users/bootcamp/Desktop/C/fractol/src/formulas2.c" "/Users/bootcamp/Desktop/C/fractol/cmake-build-debug/CMakeFiles/fractol.dir/src/formulas2.c.o"
   "/Users/bootcamp/Desktop/C/fractol/src/initialize.c" "/Users/bootcamp/Desktop/C/fractol/cmake-build-debug/CMakeFiles/fractol.dir/src/initialize.c.o"
   "/Users/bootcamp/Desktop/C/fractol/src/loop.c" "/Users/bootcamp/Desktop/C/fractol/cmake-build-debug/CMakeFiles/fractol.dir/src/loop.c.o"
   "/Users/bootcamp/Desktop/C/fractol/src/main.c" "/Users/bootcamp/Desktop/C/fractol/cmake-build-debug/CMakeFiles/fractol.dir/src/main.c.o"

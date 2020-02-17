@@ -47,6 +47,7 @@ int		main(int c, char **v)
 	data.fractals[JULIA] = julia;
 	data.fractals[BURNING] = burning_ship;
 	data.fractals[BUFFALO] = buffalo;
+	data.fractals[MANDELBAR] = mandelbar;
 	initialize_constant(&data);
 	initialize_mlx(&data, "zdarova!");
 	data.max_iterations = START_ITER;

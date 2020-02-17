@@ -30,12 +30,13 @@
 # define THREAD_CNT 50
 # include <pthread.h>
 
-# define FRACTAL_CNT 4
+# define FRACTAL_CNT 5
 
 # define MANDELBROT 0
 # define JULIA 1
 # define BURNING 2
 # define BUFFALO 3
+# define MANDELBAR 4
 
 typedef struct		s_complex_num
 {
@@ -81,12 +82,14 @@ int					julia_flow(int x, int y, t_data *data);
 int					mandelbrot(t_data *data, t_complex_num *c);
 int					burning_ship(t_data *data, t_complex_num *c);
 int					buffalo(t_data *data, t_complex_num *c);
+int					mandelbar(t_data *data, t_complex_num *c);
 
 static char			*g_fractals[] = {
 		"Mandelbrot",
 		"Julia",
 		"Burning ship",
-		"Buffalo"
+		"Buffalo",
+		"Mandelbar"
 };
 
 #endif

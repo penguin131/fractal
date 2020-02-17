@@ -204,6 +204,33 @@ src/formulas.c.s:
 	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/formulas.c.s
 .PHONY : src/formulas.c.s
 
+src/formulas2.o: src/formulas2.c.o
+
+.PHONY : src/formulas2.o
+
+# target to build an object file
+src/formulas2.c.o:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/formulas2.c.o
+.PHONY : src/formulas2.c.o
+
+src/formulas2.i: src/formulas2.c.i
+
+.PHONY : src/formulas2.i
+
+# target to preprocess a source file
+src/formulas2.c.i:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/formulas2.c.i
+.PHONY : src/formulas2.c.i
+
+src/formulas2.s: src/formulas2.c.s
+
+.PHONY : src/formulas2.s
+
+# target to generate assembly for a file
+src/formulas2.c.s:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/formulas2.c.s
+.PHONY : src/formulas2.c.s
+
 src/initialize.o: src/initialize.c.o
 
 .PHONY : src/initialize.o
@@ -330,6 +357,9 @@ help:
 	@echo "... src/formulas.o"
 	@echo "... src/formulas.i"
 	@echo "... src/formulas.s"
+	@echo "... src/formulas2.o"
+	@echo "... src/formulas2.i"
+	@echo "... src/formulas2.s"
 	@echo "... src/initialize.o"
 	@echo "... src/initialize.i"
 	@echo "... src/initialize.s"

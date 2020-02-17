@@ -34,7 +34,8 @@ void			end_mlx(t_data *data)
 void			initialize_constant(t_data *data)
 {
 	data->min = init(-2.0, -2.0);
-	data->max.real = 2.0;
-	data->max.img = data->min.img + (data->max.real - data->min.real) * HEIGHT / WIDTH;
+	data->max = init(2.0, 2.0);
+//	data->max.real = 2.0;
+//	data->max.img = data->min.img + (data->max.real - data->min.real) * HEIGHT / WIDTH;
 	data->julia_c = init(-0.4, 0.6);
 }

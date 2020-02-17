@@ -42,6 +42,10 @@ unistd.h
 ../inc/fractol.h
 /Users/bootcamp/Desktop/C/fractol/inc/fractol.h
 
+/Users/bootcamp/Desktop/C/fractol/src/formulas2.c
+../inc/fractol.h
+/Users/bootcamp/Desktop/C/fractol/inc/fractol.h
+
 /Users/bootcamp/Desktop/C/fractol/src/initialize.c
 ../inc/fractol.h
 /Users/bootcamp/Desktop/C/fractol/inc/fractol.h

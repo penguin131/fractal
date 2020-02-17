@@ -94,6 +94,9 @@
 		<Unit filename="/Users/bootcamp/Desktop/C/fractol/src/formulas.c">
 			<Option target="fractol"/>
 		</Unit>
+		<Unit filename="/Users/bootcamp/Desktop/C/fractol/src/formulas2.c">
+			<Option target="fractol"/>
+		</Unit>
 		<Unit filename="/Users/bootcamp/Desktop/C/fractol/src/initialize.c">
 			<Option target="fractol"/>
 		</Unit>
