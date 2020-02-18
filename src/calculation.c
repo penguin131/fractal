@@ -66,7 +66,7 @@ static void		draw_thread(t_data *data)
 		while (x < WIDTH)
 		{
 			c.real = data->min.real + x * data->coeff.real;
-			data->mlx_map[y * HEIGHT + x] = get_color(data->fractals[data->mode](data, &c), data->max_iterations);
+			data->mlx_map[y * HEIGHT + x] = get_color(data, data->fractals[data->mode](data, &c), data->max_iterations);
 			x++;
 		}
 		y++;
