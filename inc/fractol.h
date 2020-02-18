@@ -26,6 +26,8 @@
 # define RIGHT 124
 # define LEFT 123
 # define SPACE 49
+# define LEFT_MODE 22
+# define RIGHT_MODE 23
 
 # define THREAD_CNT 50
 # include <pthread.h>
@@ -49,6 +51,7 @@ typedef struct		s_data
 	char 			reverse_zoom;
 	char 			solo_tread;
 	char			hold_julia;
+	char			color_type;
 	int 			mode;
 	void			*mlx_ptr;
 	void			*win_ptr;
@@ -75,7 +78,7 @@ void				draw_fractal(t_data *data);
 void				end_mlx(t_data *data);
 int					zoom(int key, int x, int y, t_data *data);
 void				initialize_constant(t_data *data);
-int					get_color(int iteration, int max);
+int					get_color(t_data *data, int iteration, int max);
 void				initialize_mlx(t_data *data, char *name);
 
 int					julia(t_data *data, t_complex_num *c);

@@ -10,6 +10,14 @@ void	switch_fractal(t_data *data, int key)
 	initialize_constant(data);
 }
 
+void	switch_color(t_data *data, int key)
+{
+	if (key == RIGHT_MODE && data->color_type < 3)
+		data->color_type++;
+	else if (key == LEFT_MODE && data->color_type > 0)
+		data->color_type--;
+}
+
 int		deal_key(int key, void *param)
 {
 	t_data	*data;
@@ -29,6 +37,8 @@ int		deal_key(int key, void *param)
 		switch_fractal(data, key);
 	else if (key == SPACE)
 		data->hold_julia = ~data->hold_julia;
+	else if (key == RIGHT_MODE || key == LEFT_MODE)
+		switch_color(data, key);
 	//printf("%d\n", key);
 	draw_fractal(data);
 	return (0);
